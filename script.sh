@@ -25,7 +25,6 @@ if [ -s "$JSON_OUTPUT" ]; then
         mv "$CURRENT_LIST" "$OLD_LIST"
     else
         echo "New movies at the alamo drafthouse:"
-        echo "Debugging: Current list not old list" #TODO: Remove
         cat "$CURRENT_LIST"
         mv "$CURRENT_LIST" "$OLD_LIST"
     fi
